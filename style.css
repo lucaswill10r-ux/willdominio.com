@@ -1,0 +1,139 @@
+
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #1c1616;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+main h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #1fbea6;
+}
+
+main p {
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 16px;
+}
+
+/* ----- Cada campo do formulário ----- */
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Inputs gerais */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fafafa;
+    transition: border-color .3s, box-shadow .3s;
+}
+
+/* Foco nos inputs */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #4a8ef2;
+    outline: none;
+    box-shadow: 0 0 6px rgba(74, 142, 242, 0.4);
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+/* Ajuste de label + checkbox */
+form div label input[type="checkbox"] {
+    margin: 0 8px 0 0;
+}
+
+/* ----- BOTÃO DE ENVIO ----- */
+.botao-cta {
+    background: #4a8ef2;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.botao-cta:hover {
+    background: #2f6fd6;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+
+/* Telas médias */
+@media (max-width: 768px) {
+    main {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    main h3 {
+        font-size: 22px;
+    }
+
+    input, textarea, select {
+        font-size: 14px;
+    }
+}
+
+/* Telas pequenas */
+@media (max-width: 480px) {
+    main {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, textarea, select {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .botao-cta {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
